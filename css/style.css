@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+header {
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  z-index: 999;
+}
+header:before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 85px;
+  width: 100%;
+  height: 1px;
+  background-color: #078AD6;
+}
+header:after {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: 45px;
+  width: 1px;
+  height: 100vh;
+  background-color: #078AD6;
+}
+header #burger {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #078AD6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header #burger .burger-line {
+  width: 40%;
+  margin-bottom: 3px;
+  background: linear-gradient(to left, #078AD6 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  height: 1px;
+  z-index: 2;
+}
+header #burger #burger-mask {
+  background: linear-gradient(180deg, #022437 0%, #210344 50%, #8a062d 100%);
+  width: 50px;
+  height: 50px;
+  max-height: 0;
+  position: absolute;
+  bottom: -1px;
+  transition: 0.5s;
+  z-index: 1;
+}
+header #burger:hover > #burger-mask {
+  max-height: 50px;
+}
+header #burger:hover > .burger-line {
+  background-position: left bottom;
+  transition: all 0.5s ease;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.menu-show {
+  animation: slideRight 1s ease;
+  width: 30%;
+  background-color: #022437;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.menu-show #times-icons {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+.menu-show #times-icons:before {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  content: "";
+  width: 30px;
+  background-color: white;
+  height: 1px;
+  transform: rotate(45deg);
+}
+.menu-show #times-icons:after {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  content: "";
+  width: 30px;
+  background-color: white;
+  height: 1px;
+  transform: rotate(-45deg);
+}
+.menu-show ul {
+  list-style: none;
+  position: relative;
+  padding: 40px 40px 40px 40px;
+}
+.menu-show ul a {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+  margin-bottom: 0;
+  /*background-image: linear-gradient(90deg,$purple 30%,$pink);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;*/
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.portfolio .portfolio-card {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.portfolio .portfolio-card img {
+  width: 100%;
+  margin-right: 50px;
+  max-width: 500px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.portfolio .portfolio-card.reverse {
+  flex-direction: row-reverse;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  background-color: #022437;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+a, p, li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.separator {
+  width: 1px;
+  height: 100px;
+  background-color: #078AD6;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

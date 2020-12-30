@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'header';
+@import 'titles';
+@import 'portfolio';
+
+body{
+  margin: 0;
+  padding:0;
+  height: 1000px;
+  background-color: $primary-blue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.page-container{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+a, p, li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.separator{
+    width: 1px;
+    height: 100px;
+    background-color: $secondary-blue;
+    margin: auto;
+}
