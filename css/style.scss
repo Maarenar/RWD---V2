@@ -1,13 +1,15 @@
 @import 'variables';
 @import 'header';
+@import 'footer';
 @import 'titles';
 @import 'portfolio';
+@import 'contact';
 
 body{
   margin: 0;
   padding:0;
   height: 1000px;
-  background-color: $primary-blue;
+  background-color: black;
 }
 
 *{
@@ -22,9 +24,14 @@ body{
 
 a, p, li {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     color: #ffffff;
+}
+
+i{
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .separator{
@@ -32,4 +39,10 @@ a, p, li {
     height: 100px;
     background-color: $secondary-blue;
     margin: auto;
+}
+
+.btn{
+    border: 1px solid $secondary-blue;
+    border-radius: 10px;
+    padding: 10px 20px;
 }

@@ -1,0 +1,15 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#placeholder-contact{
+    width: 70%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid $secondary-blue;
+}
+
