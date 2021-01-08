@@ -1,11 +1,17 @@
 footer{
-    padding: 0 70px 50px 70px;
+    padding: 0 70px 20px 70px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
     .copyright{
         display: flex;
         align-items: center;
         i{
-            margin-right: 10px;
+            display: block;
+            margin-right: 5px;
         }
+    }
+    .fab{
+        margin-right: 10px;
     }
 }

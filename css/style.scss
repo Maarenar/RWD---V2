@@ -20,6 +20,9 @@ body{
     max-width: 1200px;
     margin: auto;
     padding-top: 50px;
+    @media all and (max-width : 1200px){
+        padding: 50px;
+    }
 }
 
 a, p, li {
@@ -37,12 +40,17 @@ i{
 .separator{
     width: 1px;
     height: 100px;
-    background-color: $secondary-blue;
+    background-color: $purple-light;
     margin: auto;
 }
 
 .btn{
-    border: 1px solid $secondary-blue;
+    border: 1px solid $purple-light;
     border-radius: 10px;
     padding: 10px 20px;
+    background-color: transparent;
+    &:hover{
+        background-color: $purple;
+        border: 1px solid transparent;
+    }
 }
